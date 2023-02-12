@@ -1,16 +1,11 @@
+import { Contacts } from 'features/contacts/Contacts';
+import s from './App.module.css';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={s.container}>
+      <h1 className={s.title}>Contacts book</h1>
+      <Contacts />
     </div>
   );
 };
